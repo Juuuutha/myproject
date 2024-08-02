@@ -31,12 +31,13 @@
                                         <div class="row col-md-2-8-2 ">
                                             <label class="col-md-3 col-form-label text-md-end">Url</label>
 
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-12">
                                                         <input id="original_url" type="text" class="form-control " name="original_url" required >
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-12 ">
                                                         <button type="submit" class="btn btn-primary">Save</button>
                                                 </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>

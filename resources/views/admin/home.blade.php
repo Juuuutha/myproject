@@ -27,12 +27,12 @@
                                 <div class="card-body">
                                     <form method="POST" action="{{ route('url-store') }}">
                                         @csrf
-                                        <div class="row col-md-2-8-2 ">
+                                        <div class="row col-md-2-8-2  ">
                                             <label class="col-md-3 col-form-label text-md-end">Url</label>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-12">
                                                     <input id="original_url" type="text" class="form-control " name="original_url" required >
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-12 ">
                                                         <button type="submit" class="btn btn-primary">Save</button>
                                                 </div>
                                         </div>
@@ -45,7 +45,7 @@
                 <div class="ibox-title">
                     <h1> ข้อมูลลูกค้า</h1>
                 </div>
-                    <div class="card col-2 pull-right">
+                    <div class="card col-2 col-12 pull-right">
                         <div class="card-body">
                             <div class="card-header">จำนวนลูกค้า</div>
                         <h2 ><i class="fa fa-user "></i>&nbsp;{{$user}} คน</h2>
