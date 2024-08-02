@@ -122,7 +122,7 @@
         function btn(url_id){
                 Swal.fire({
                     title: "Are you sure?",
-                    text: "You want be delete this!",
+                    text: "You want to be delete this!",
                     icon: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#3085d6",

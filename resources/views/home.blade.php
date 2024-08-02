@@ -44,31 +44,31 @@
                     </div>
                 </div>
                 <hr>
-                <div class="ibox-content">
-                    <div class="ibox-title">
-                        <h1> Hello {{$shortLinks->name}}</h1>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-hover table-sm dataTables">
-                            <thead>
-                                <tr>
-                                    <th ></th>
-                                    <th>Short Url</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if ($shortLinks != null)
-                                @foreach($shortLinks->urls as $key => $row)
+                @if ($shortLinks != null)
+                    <div class="ibox-content">
+                        <div class="ibox-title">
+                            <h1> Hello {{$shortLinks->name}}</h1>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-sm dataTables">
+                                <thead>
                                     <tr>
-                                        <td class="text-center"style="width:10%" >{{$key+1}}</td>
-                                        <td style="width:25%"><a href="{{ route('shorten.link', $row->short_url) }}" target="_blank">{{ route('shorten.link', $row->short_url) }}</a></td>
+                                        <th ></th>
+                                        <th>Short Url</th>
                                     </tr>
-                                @endforeach
-                                @endif
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @foreach($shortLinks->urls as $key => $row)
+                                        <tr>
+                                            <td class="text-center"style="width:10%" >{{$key+1}}</td>
+                                            <td style="width:25%"><a href="{{ route('shorten.link', $row->short_url) }}" target="_blank">{{ route('shorten.link', $row->short_url) }}</a></td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
+                @endif
             </div>
     </div>
     <script  type="text/javascript">
